@@ -9,12 +9,12 @@ PIPE SEARCH FILTERS
 #Usage
 
 - Install Dependencies
-cd Angular-5-full-CRUD-operations
-npm install
-npm install -g json-server
+- cd Angular-5-full-CRUD-operations
+- npm install
+- npm install -g json-server
 
 
 - Run Server
-json-server --p 333 products.json
+- json-server --p 333 products.json
 
--ng serve or npm start 
+- ng serve or npm start 
