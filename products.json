@@ -1,0 +1,60 @@
+{
+  "products": [
+    {
+      "image": "https://s7d2.scene7.com/is/image/SamsungUS/Pdpkeyfeature-sm-g920tzkatmb-600x600-C1-062016?$product-details-jpg$",
+      "name": "samsung",
+      "brand": "s6",
+      "price": "15000",
+      "id": 1
+    },
+    {
+      "image": "http://mspoweruser.com/wp-content/uploads/2015/04/HTC-M8-PhoneHero_InvariantCulture_Default_thumb.png",
+      "name": "HTC",
+      "brand": "4g",
+      "price": "40000",
+      "id": 2
+    },
+    {
+      "image": "http://www.pngall.com/wp-content/uploads/2016/06/Samsung-Mobile-Phone-PNG-Image.png",
+      "name": "samsung ",
+      "brand": "A8",
+      "price": "30000",
+      "id": 3
+    },
+    {
+      "image": "http://www.htc.com/managed-assets/shared/desktop/smartphones/htc-one-a9s/explorer/htc-one-a9s-global-ironcast-phone-listing.png",
+      "name": "HTc",
+      "brand": "United",
+      "price": "23999",
+      "id": 4
+    },
+    {
+      "image": "https://static.dam.com.bd/resources/uploads/prod_men_img/5709_menu_img.png",
+      "name": "oppo",
+      "brand": "A57",
+      "price": "23499",
+      "id": 5
+    },
+    {
+      "image": "https://static.dam.com.bd/resources/uploads/prod_men_img/4063_menu_img.png",
+      "name": "oppo",
+      "brand": "mirror 5",
+      "price": "34000",
+      "id": 6
+    },
+    {
+      "image": "http://jamsons.in/Content/img/mobiles/apple/iphone6s.png",
+      "name": "iphone",
+      "brand": "6s 64gb",
+      "price": "47000",
+      "id": 7
+    },
+    {
+      "image": "https://www.t-mobile.com/images/png/products/phones/Apple-iPhone-X-Silver/250x270_1.png",
+      "name": "iphone ",
+      "brand": "x 120gb",
+      "price": "80000",
+      "id": 8
+    }
+  ]
+}

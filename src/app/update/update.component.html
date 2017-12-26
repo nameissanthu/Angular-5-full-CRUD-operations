@@ -1,0 +1,68 @@
+<p *ngIf = "!exist">
+  Product doesn't exist
+</p>
+<div class="container">
+ 
+<div class="row">
+
+<div class="form_wrapper col-md-6">
+    <div class="form_container">
+      <div class="title_container">
+        <h2>Update Products</h2>
+      </div>
+      <div class="row clearfix">
+        <div class="">
+          <form id="formNewProduct" name="formNewProduct" #productData="ngForm" (ngSubmit)="updateProduct(productData.value)">
+            <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+              <input type="text" #img name="image" id="image" placeholder="Enter Image Url" [(ngModel)]="data.image"   ngModel/>
+            </div>
+            <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+              <input type="text" #nme name="name" id="name"  placeholder="Enter Name of Product"[(ngModel)]="data.name"   ngModel/>
+            </div>
+            <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+              <input type="text" #bnd name="brand" id="brand" placeholder="Enter Brand of Product"  [(ngModel)]="data.brand"   ngModel/>
+            </div>
+            <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+              <input type="text" #ps name="price" id="price" placeholder="Enter Price"  [(ngModel)]="data.price" ngModel/>
+            </div>
+            <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+              <input type="text"  name="id" id="id" placeholder="Enter  id"  [(ngModel)]="data.id" ngModel/>
+            </div>
+            <input class="button" type="submit" value="Update Products" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container col-md-6" *ngIf="img.value" >
+          <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-image">
+                <img class="img-responsive" src="{{img.value}}" height="400" width="400"><br><br><br>
+                
+                <span class="card-title" style="color:black;">{{nme.value}}</span>
+              </div>
+      
+              <div class="card-content">
+                <h3>{{bnd.value}}</h3>
+                <p>Price:{{ps.value}}</p>
+    
+              </div>
+      
+              <div class="card-action">
+                                
+              </div>
+            </div>
+      
+          </div>
+          
+          
+        </div>
+      </div>
+    </div>
+      </div>
+
+
+
+ 
