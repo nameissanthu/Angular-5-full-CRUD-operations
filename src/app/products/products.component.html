@@ -1,9 +1,11 @@
 <div class="container">
+  
     <div align="right">
       <button class="btn btn-primary" routerLink="/addproducts">+Add Products</button>
     </div><br>
+    <input type="text" class="form-control" placeholder="Search Products" [(ngModel)]="query"><br>
 <div class="row">
-  <div class="col-md-3" *ngFor="let product of products">
+  <div class="col-md-3" *ngFor="let product of products | search:'name,brand':query">
       <div class="thumbnail">
           <div align="right">
               <button class="btn btn-danger btn-sm" (click)="deleteProduct(product.id)">X</button> 
@@ -12,8 +14,9 @@
       <img src="{{product.image}}" class="img-responsive" alt="..." height="200" width="200">
       
       <div class="caption">
-        <h3>{{product.name}}</h3>
-        <p>{{product.brand}}</p>
+        <h3 class="well well-sm well-info">{{product.name}}</h3>
+        <h3><strong>{{product.brand}}</strong></h3>
+        <p class="text-justify">price:<strong>{{product.price}}</strong></p>
        <button class="btn btn-warning btn-block">Add To Cart</button>
       </div>
     </div>

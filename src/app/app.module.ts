@@ -11,6 +11,7 @@ import { ProductsComponent } from './products/products.component';
 import { ProductsService } from './products.service';
 import { AddproductsComponent } from './addproducts/addproducts.component';
 import { UpdateComponent } from './update/update.component';
+import { SearchFilterPipe } from './searchFilterPipe';
  
 const routes = ([{path:'',component:HomeComponent},{path:'products', component:ProductsComponent},
 {path:'update/:id', component:UpdateComponent},
@@ -24,6 +25,7 @@ const routes = ([{path:'',component:HomeComponent},{path:'products', component:P
     ProductsComponent,
     AddproductsComponent,
     UpdateComponent,
+    SearchFilterPipe
 
   ],
   imports: [

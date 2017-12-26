@@ -35,31 +35,28 @@
     </div>
   </div>
   <div class="container col-md-6" *ngIf="img.value" >
-          <div class="row">
-          <div class="col-md-6">
-            <div class="card">
-              <div class="card-image">
-                <img class="img-responsive" src="{{img.value}}" height="400" width="400"><br><br><br>
-                
-                <span class="card-title" style="color:black;">{{nme.value}}</span>
-              </div>
       
-              <div class="card-content">
-                <h3>{{bnd.value}}</h3>
-                <p>Price:{{ps.value}}</p>
-    
-              </div>
-      
-              <div class="card-action">
-                                
-              </div>
-            </div>
-      
-          </div>
+  <div class="row">
+      <div class="col-md-6">
+          <div class="thumbnail">
+              
+          <img src="{{img.value}}" class="img-responsive" alt="..." height="200" width="200">
           
-          
+          <div class="caption">
+            <h3>{{nme.value}}</h3>
+            <p>{{bnd.value}}</p>
+            <p>{{ps.value}}</p>
+        </div>
         </div>
       </div>
+    </div>
+
+
+
+      
+      
+    
+  </div>
     </div>
       </div>
 
